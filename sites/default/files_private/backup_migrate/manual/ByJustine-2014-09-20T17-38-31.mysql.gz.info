@@ -1,0 +1,8 @@
+filename = "ByJustine-2014-09-20T17-38-31"
+description = ""
+datestamp = "1411234712"
+generator = "Backup and Migrate (http://drupal.org/project/backup_migrate)"
+generatorversion = "7.x-2.x"
+sites[0][version] = "7.31"
+sites[0][name] = "By Justine"
+sites[0][url] = "http://by-justine.localhost:8082/"

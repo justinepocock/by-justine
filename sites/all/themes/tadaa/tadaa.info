@@ -1,0 +1,25 @@
+name = tadaa
+description = A slightly floral theme.
+package = Core
+version = VERSION
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = less/reset.less
+stylesheets[all][] = less/style.less
+;FOAD
+stylesheets[all][] = system.theme.css
+stylesheets[all][] = system.messages.css
+stylesheets[all][] = system.menus.css
+stylesheets[all][] = filter.css
+stylesheets[all][] = node.css
+stylesheets[all][] = comment.css
+
+regions[header] = Header
+regions[strapline] = Strapline
+regions[help] = Help
+regions[content] = Content
+regions[footer] = Footer
+regions[sidebar_first] = Sidebar First
+
+

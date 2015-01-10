@@ -1,0 +1,570 @@
+/* Layout */
+/* Typography */
+/* Buttons and Select boxes */
+/* Menus */
+/* FIlters */
+
+@import("variables.less");
+@import("mixins.less");
+
+/*Layout */
+
+body {
+	font-family: @fontJP;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+.wrapper {
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+header {
+	padding-bottom: 15px;
+
+	.mainstage {
+		height: 14em;
+		border-bottom: 6px solid #ff2288;
+		background-position:  center center; 
+	  -webkit-background-size: cover;
+	     -moz-background-size: cover;
+	       -o-background-size: cover;
+	          background-size: cover;
+	}
+}
+
+.site-name {
+	position: relative;
+	top: -1.8em;
+	padding-left: 8px;
+}
+
+.site-slogan,
+.node-teaser,
+aside, 
+footer {
+	padding: 0 15px;
+}
+
+aside {
+	padding: 15px;
+	background-color: @colorPrimary;
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.main {
+	padding: 30px 15px;
+}
+
+header, .main, .error-messages, .strapline, .nav, aside, footer {
+  flex: 1 100%;
+}
+	/*Desktop*/
+	@media (min-width: @maxTabletWidth) { 
+
+		.wrapper {
+			margin: 0 auto;
+			display: flex;
+			flex-flow: row wrap;
+		}
+
+		header {
+			.mainstage {
+				height: 28em;
+			}
+		}
+
+		.site-name {
+			top: -2.6em;
+		}
+
+
+		aside {
+			order: 1;
+			flex: 1 0;
+			margin: 30px 15px 6px 0px;
+			padding: 0 30px;
+			border-right: 1px solid @colorHighlight;
+			background-color: transparent;
+		}
+		.main {
+			order: 2;
+			flex: 2 0 20%;
+			padding-top: 0;
+			margin-top: 30px;
+		}
+
+		footer {
+			order: 3;
+			border-top: 1px dashed paleturquoise;
+		}
+	}
+
+/* Typography */ 
+body {
+	color: @colorReadable;
+}
+.site-name h1 {
+	font-size: 3em;
+	text-transform: uppercase;
+	.chunkyLetters;
+	line-height: inherit;
+	a {
+		text-decoration: none;
+		color: @colorHighlight;
+	}
+}
+
+h1 {
+	font-size: 3em;
+	.chunkyLetters;	
+	text-decoration: none;
+	color: @colorReadable;
+	line-height: initial;
+}
+
+h2 {
+	font-size: 2em;
+	.chunkyLetters;
+	line-height: 1.5;
+	color: @colorAlt;
+	letter-spacing: -1px;
+}
+
+h3 {
+	font-size: 1.25em;
+	.chunkyLetters;
+	line-height: 1.5em;
+}
+h4 {
+	.chunkyLetters;
+	font-style: italic;
+}
+
+p {
+	line-height: 1.5;
+	margin-bottom: 1em;
+}
+
+a {
+	color: @colorPrimary;
+	&:hover {
+		.transitionFast;
+		color: @colorHighlight;
+	}
+}
+
+blockquote {
+	font-size: 2em;
+	.chunkyLetters;
+	color: @colorPrimary;
+	float: right;
+	width: 50%;
+	margin-bottom: 1.5em;
+	letter-spacing: -1px;
+	&:before,
+	&:after {
+		font-size: 3em;
+		color: @colorHighlight;
+		content: "\201C";
+		vertical-align: middle;
+		vertical-align: -webkit-baseline-middle;
+		margin-right: 0.1em;
+	}
+	&:after {
+		content: "\201E";
+		vertical-align: baseline;
+	}
+}
+
+.label-inline {
+	display: inline;
+	text-transform: uppercase;
+	font-size: 0.75em;
+	color: @colorWhite;
+	background-color: @colorPrimary;
+	padding: 5px;
+} 
+.inline {
+	.clearfix;
+	&> * {
+		display: inline;
+	}
+	.label-inline {
+		margin-right: 15px;
+	}
+}
+*[onclick] {
+	cursor: pointer;
+}
+
+.main-menu {
+	a {
+		color: @colorWhite;
+		font-size: 1.1em;
+		text-decoration: none;
+		background-color: @colorHighlight;
+		padding: 3px;
+		margin: 3px 0;
+		&.active {
+			color: @colorWhite;
+		}
+		&:hover {
+			background-color: @colorPrimary;
+		}
+		&.icon-camera-alt:hover {
+			background-color: @colorAlt;
+		}
+		&.icon-comment-inv-alt2:hover {
+			background-color: orange;
+		}
+		&.icon-pencil:hover {
+			background-color: dodgerblue;
+		}
+	}
+
+}
+
+.site-slogan {
+	color: #ff2288;
+	.chunkyLetters;
+	font-size: 1.5em;
+	line-height: 1.25;
+}
+
+aside {
+	color: @colorWhite;
+	a {
+		color: @colorWhite;
+		text-decoration: underline;
+	}
+}
+
+footer {
+	li {
+		text-transform: uppercase;
+		font-size: 0.75em;
+		a {
+			color: @colorHighlight;
+			text-decoration: none;
+			&:hover {
+				.transitionFast;
+				color: @colorPrimary;
+			}
+		}
+	}
+}
+
+	/*Desktop typography*/
+	@media (min-width: @maxTabletWidth) { 
+
+		.site-name h1 {
+			font-size: 5em;
+		}
+		.site-slogan {
+			font-size: 1.75em;
+			line-height: 1.65em;
+		}
+
+		aside {
+			text-align: right;
+			color: @colorReadable;
+			p {
+				font-size: 0.8em;
+			}
+			a {
+				color: @colorPrimary;
+			}
+		}
+	}
+
+/* Buttons and select boxes */
+input {
+	padding: 10px 15px;
+	color: @colorHighlight;
+	text-transform: uppercase;
+	font-size: 0.75em;
+	border: 1px solid @colorPrimary;
+	margin-bottom: 20px;
+	&[type="submit"] {
+		background-color: @colorPrimary;
+		color: @colorWhite;
+		border: none;
+		&:hover {
+			.transitionFast;
+			background-color: @colorHighlight;
+		}
+	}
+	&[type="checkbox"] {
+		display: inline;
+	}
+}
+select {
+	color: #331177;
+	font-size: 0.75em;
+	border-color: @colorPrimary;
+}
+
+.form-required {
+	.chunkyLetters;
+	color: @colorHighlight;
+}
+.form-item {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: baseline;
+	label,
+	input[type='text'], 
+	textarea {
+		flex: 1 100%;
+	}
+}
+
+.resizable-textarea {
+	width: 100%;
+}
+
+.form-actions {
+	.clearfix;
+	input {
+		float: left;
+	}
+}
+
+/*Desktop formsy*/
+@media (min-width: @maxTabletWidth) { 
+	.form-item {
+		width: 80%;
+		label { 
+			min-width: 175px;
+			flex: 1 0;
+		}
+		input[type='text'], 
+		textarea {
+			flex: 1 auto;
+		}
+	}
+}
+
+/* Menu */ 
+
+.main-menu {
+	position: absolute;
+	right: 0;
+	width: 10em;
+	z-index: 1;
+	text-align: right;
+	margin: 0 1em;
+	li {
+		padding: 3px 0;
+	}
+}
+
+.tabs {
+	margin-top: 30px;
+	.clearfix;
+	li {
+		.horizLinks;
+		a {
+			color: @colorWhite;
+			background-color: @colorHighlight;
+			padding: 5px;
+			&:hover {
+				.transitionFast;
+				background-color: @colorPrimary;
+				color: @colorWhite;
+			}
+		}
+	}
+}
+
+footer {
+	.block-menu {
+		li {
+			.horizLinks;
+		}
+	}
+}
+
+// Page elements 
+.node-teaser {
+	border-bottom: 1px solid @colorHighlight;
+	padding: 15px;
+
+	h2 {
+		color: @colorPrimary;
+	}
+	img {
+		float: right;
+		padding-left: 15px;
+		width: 100%;
+		max-width: 300px;
+
+	}
+	&:first-of-type {
+		margin-top:30px;
+		border-bottom: 1px solid @colorWhite;
+	}
+	&:hover,
+	&:first-of-type {
+		.transition;
+		background-color: #ff2288;
+		padding-left: 15px;
+		padding-right: 15px;
+		* {
+			.transition;
+			color: white;
+		}
+	}
+}
+.featured-block {
+	img {
+		float: left;
+		width: 50%;
+		padding-right: 15px;
+	}
+}
+
+// Desktop page elements 
+@media (min-width: @maxTabletWidth) { 
+	.featured-block {
+		img {
+			float: none;
+			width: 100%;
+			padding-right: 0;
+		}
+	}
+
+	.node-teaser {
+		img {
+			width: 300px;
+		}
+	}
+
+}
+
+/* Comments */
+.comments-wrapper {
+	border-bottom: 1px dashed @colorPrimary;
+}
+.comment {
+	border-top: 1px dashed @colorPrimary;
+	padding: 15px 0 ;
+	a.permalink {
+		font-size: 1.5em;
+		.chunkyLetters;
+		line-height: 1.5em;
+		letter-spacing: -0.05em;
+	}
+	.links a {
+		.littleLinks;
+	}
+	span {
+		text-transform: uppercase;
+		font-size: 0.75em;
+		padding-left: 15px;
+
+		&.username {
+			font-size: inherit;
+			padding-left: 0;
+		}
+	}
+}
+
+/* Filters on comments */
+.filter-wrapper {
+	border: 1px dashed @colorPrimary;
+	padding: 15px;
+	margin: 15px 0;
+	.filter-help {
+		float: right;
+	}
+	.form-type-select label {
+		display: inline;
+	}
+	.filter-guidelines {
+		font-size: 0.75em;
+	}
+}
+
+/* Content elements */ 
+
+.node-unpublished:before,
+.node-unpublished:after {
+	content: "* This content is unpublished *";
+	padding: 5px 15px;
+	background-color: @colorHighlight;
+	margin: 30px 7px;
+	color: @colorWhite;
+	.chunkyLetters;
+	display: block;
+	// this is needed to override the clearfix settings
+	height: auto;
+	visibility: visible;
+}
+
+.messages {
+	margin: 15px;
+	padding: 15px;
+	.chunkyLetters;
+	background-color: lighten(@colorBg, 10%);
+	&.status {
+		border-left: 2px dotted darken(@colorAlt, 20%);
+		border-right: 2px dotted darken(@colorAlt, 20%);
+		color: darken(@colorAlt, 20%);
+	}
+	&.error {
+		border-left: 2px dotted @colorHighlight;
+		border-right: 2px dotted @colorHighlight;
+		color: darken(@colorHighlight, 10%)
+	}
+}
+.pager {
+	.clearfix;
+	li {
+		.horizLinks;
+		padding: 5px 15px;
+		background-color: @colorHighlight;
+		margin: 30px 7px;
+		a {
+			color: @colorWhite;
+		}
+		&.pager-current,
+		&:hover {
+			.transitionFast;
+			background-color: @colorPrimary;
+			color: @colorWhite;
+		}
+	}
+}
+
+.tags {
+	padding: 15px 0;
+	margin-top: 15px;
+	border-top-color: @colorPrimary;
+	a {
+		.littleLinks;
+	}
+}
+
+// Desktop content elements 
+@media (min-width: @maxTabletWidth) { 
+	.filter-wrapper {
+		width: 77%;
+	}
+	
+	.user-picture {
+		float: right;
+	}
+
+	.indented .comment {
+		margin-left: 30px;
+		border-top: 1px dashed @colorHighlight;
+	}
+
+}
