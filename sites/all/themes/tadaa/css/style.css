@@ -80,6 +80,13 @@ a {
 a:hover { 
   color: #ffffff;
 }
+/* node because we only want content lists and not all lists */
+.node li {
+    list-style: initial;
+    margin-left: 2em;
+    margin-bottom: .5em;
+    width: 75%;
+}
 
 input, select {
   cursor: pointer;
