@@ -41,6 +41,7 @@
 
     <?php print $head; ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="fb:pages" content="1440250822954822" />
     <title><?php print $head_title; ?></title>
     <?php print $styles; ?>
     <link rel="stylesheet" href="sites/all/themes/tadaa/fontello/css/fontello.css">
