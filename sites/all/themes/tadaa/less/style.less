@@ -167,8 +167,10 @@ blockquote {
 	width: 50%;
 	margin-bottom: 1.5em;
 	letter-spacing: -1px;
-	&:before,
-	&:after {
+        p {
+		margin-bottom: 0;
+	}
+	&:before {
 		font-size: 3em;
 		color: @colorHighlight;
 		content: "\201C";
@@ -176,15 +178,27 @@ blockquote {
 		vertical-align: -webkit-baseline-middle;
 		margin-right: 0.1em;
 	}
-	&:after {
-		content: "\201E";
-		vertical-align: baseline;
-	}
+}
+
+small {
+    font-size: smaller;
+    color: #bbb;
+}
+
+strong {
+    font-style: oblique;
 }
 
 /* node because we only want content lists and not all lists */
-.node li {
+.node ul {
     list-style: initial;
+    margin-left: 2em;
+    margin-bottom: .5em;
+    width: 75%;
+}
+
+.node ol {
+    list-style: decimal;
     margin-left: 2em;
     margin-bottom: .5em;
     width: 75%;
