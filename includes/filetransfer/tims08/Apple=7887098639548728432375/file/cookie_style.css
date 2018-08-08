@@ -1,0 +1,256 @@
+#gld_cookie_flag, #gld_cookie_estesa {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+}
+#gld_cookie_flag {
+	width: 100%;
+	border-bottom: 1px solid #B3B3B3;
+	position: fixed;
+	z-index: 10000;
+	top: -100%;
+	left: 0;
+	background-color: #D6D6D6;
+}
+#gld_cookie_flag .container_cookie {
+	width: 960px;
+	height: 85px;
+	margin: 0 auto;
+	background: url(https://www.119selfservice.tim.it/timimages/cookie119/gld_images/cookie_info_icon.png) center left no-repeat;
+	position: relative;
+}
+#gld_cookie_flag p {
+	width: 840px;
+	color: #666666;
+	float: left;
+	margin: 20px 60px 20px 60px;
+}
+#gld_cookie_flag p a {
+	color: #044990;
+	text-decoration: none;
+}
+#gld_cookie_flag .btn_modifica_cookie {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #666666;
+	border: 1px solid #B3B3B3;
+	padding: 10px 40px 10px 10px;
+	background: url(https://www.119selfservice.tim.it/timimages/cookie119/gld_images/arrow_btn_modifica_cookie.png) 250px center no-repeat;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin: 25px 0px;
+	display: inline-block;
+}
+#gld_cookie_flag .close_cookie_banner {
+	width: 20px;
+	height: 20px;
+	background: url(https://www.119selfservice.tim.it/timimages/cookie119/gld_images/close_cookie_banner.png) center center no-repeat;
+	display: block;
+	position: absolute;
+	top: 32px;
+	right: 0px;
+}
+#gdl_totalEstesa {
+	display: none;	
+}
+#gld_base_cookie_estesa {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	/*display: none;*/
+	z-index: 10001;
+	background-color: #000000;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+	opacity:0.6;
+}
+#gld_cookie_estesa {
+	width: 80%;
+	position: absolute;
+	z-index: 10002;
+	top: 16%;
+	height: 74%;
+	left: 10%;
+	background: #D6D6D6;
+	/*overflow: hidden;*/
+}
+#gld_cookie_estesa .intestazione_popup {
+	width: 100%;
+	text-align: center;
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #B3B3B3;
+	position: absolute;
+ 	z-index: 10003;
+	background: #D6D6D6;
+	margin-top: -61px;
+}
+
+#gld_cookie_estesa .intestazione_popup h3 {
+	font-size: 20px;
+	font-weight: normal;
+	color: #0C56A0;
+	margin: 0;
+	line-height: 60px;
+	position: absolute;
+	width: 100%;
+	z-index: 10004;
+}
+#gld_cookie_estesa .close_cookie_popup {
+	width: 30px;
+	height: 30px;
+	background: url(https://www.119selfservice.tim.it/timimages/cookie119/gld_images/close_cookie_popup.png) center center no-repeat;
+	display: block;
+	/*position: absolute;
+	top: 10px;
+	right: 10px;*/
+	float: right;
+	margin: 10px;
+	position: relative;
+	z-index: 10006;
+}
+#gld_cookie_estesa  #cookie_form {
+	display: block;
+}
+#gld_cookie_estesa .row {
+	width: 95%;
+	margin: 0 auto;
+	border-bottom: 1px solid #B2B2B2;
+	padding: 20px 0px;
+	color: #666666;
+	display: block;
+}
+#gld_cookie_estesa .row_title {
+	width: 95%;
+	margin: 0 auto;
+	padding: 0;
+}
+#gld_cookie_estesa .row div {
+	/*float: left;*/
+	line-height: 22px;
+}
+#gld_cookie_estesa .row div.first {
+	font-size: 15px;
+	font-weight: bold;
+	width: 100%;
+	cursor: pointer;
+	position: relative;
+}
+#gld_cookie_estesa .row div.first {
+	background: url(https://www.119selfservice.tim.it/timimages/cookie119/gld_images/arrow_up.png) right center no-repeat;
+}
+#gld_cookie_estesa .row div.first.close {
+	background: url(https://www.119selfservice.tim.it/timimages/cookie119/gld_images/arrow_down.png) right center no-repeat;
+}
+#gld_cookie_estesa .row div.last {
+	margin-left: 20px;
+}
+#gld_cookie_estesa .row label {
+	line-height: 22px;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+#gld_cookie_estesa .row p {
+	/*clear: both;*/
+	margin: 0;
+}
+#gld_cookie_estesa .row a {
+	color: #004990;
+	text-decoration: underline;
+}
+#gld_cookie_estesa .interno_form {
+	 height: 100%;
+	 overflow: auto;
+}
+#gld_cookie_estesa .btn_salva_cookie {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 13px;
+	font-weight: bold;
+	background-color: #0176c5;
+	padding: 10px 50px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin: 20px 30px 0px 0px;
+	float: right;
+	display: inline-block;
+}
+
+#gld_cookie_estesa .riquadro_policy {
+	padding: 20px;
+	border: 3px solid #666;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 20px;
+	font-weight: bold;
+}
+#gld_cookie_estesa .logo_cookie_popup_telecom {
+	width: 128px;
+	height: 30px;
+	background: url(https://www.119selfservice.tim.it/timimages/cookie119/gld_images/logo_telecom.png) center center no-repeat;
+	display: block;
+	/*position: absolute;
+	top: 10px;
+	left: 10px;*/
+	float: left;
+	padding: 10px;
+	position: relative;
+	z-index: 10005;
+}
+#gld_cookie_estesa .logo_cookie_popup_tim {
+	width: 83px;
+	height: 30px;
+	background: url(https://www.119selfservice.tim.it/timimages/cookie119/gld_images/logo_tim.png) center center no-repeat;
+	display: block;
+	/*position: absolute;
+	top: 10px;
+	left: 10px;*/
+	float: left;
+	padding: 10px;
+}
+#gld_cookie_estesa h1 {
+	font-size: 22px;
+	font-weight: normal;
+	color: #004990;	
+	width: 100%;
+	border-bottom: 1px solid #b3b3b3;
+	padding: 20px 0;
+}
+#gld_cookie_estesa h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	font-weight: bold;
+	color: #666666;	
+	width: 100%;
+	padding: 20px 0 5px 0;
+}
+#gld_cookie_estesa h3 {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+#gld_cookie_estesa h4 {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 5px;
+	font-weight: normal;
+}
+#gld_cookie_estesa li {
+	padding-bottom: 5px;	
+}
+#gld_cookie_estesa p,
+#gld_cookie_estesa .par {
+	padding: 10px 0;	
+}
+
+#gld_cookie_estesa .row_button {
+	width: 100%; 
+	padding-bottom: 20px;
+}

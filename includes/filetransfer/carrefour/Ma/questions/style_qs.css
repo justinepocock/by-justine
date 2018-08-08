@@ -1,0 +1,227 @@
+/* Cette feuille de style est dédiée à la page de la question secrète pour palier temporairement au problème d’affichage de la question secrète  */
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+div, p, ul, li, h1 { padding:0; margin:0; }
+p { margin: 5px 0 5px 0 }
+img { border:0; }
+
+h1 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #135AA3;
+	text-align: center;
+}
+h2 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #135AA3;
+	margin: 6px 0 0 0;
+	padding: 0;
+}
+
+a, a:visited, a:active {
+	color: #1E5596;
+	text-decoration: underline;
+}
+a:hover { text-decoration:none; }
+
+sup { line-height: 7px; }
+
+.clear {	clear:both; }
+.underline { text-decoration: underline; }
+.bleu { color: #1E5596; }
+.bold { font-weight: bold; }
+.center { text-align: center; }
+
+/********** Conteneur ********************/ 
+#page {
+	margin: auto;
+	text-align: left;
+	width: 400px;
+	padding: 0;
+	/*height: 390px;*/
+	/*border: 1px solid #000;*/ /*Bordure pour calibrage*/
+}
+
+/********** Entête - zone logos **********/ 
+#header {
+	width: 100%;
+	height: 67px;
+	background: url(header_es.gif) no-repeat;
+}
+
+/********** Contenu **********************/
+#content {
+	padding: 10px 15px 0 10px;
+	width: 380px;
+	background: url(bg_es.gif) repeat-y;
+}
+
+/********** Zone formulaire **************/  
+form, fieldset { padding:0; margin:0; }
+fieldset {
+	margin-left: 10px;
+	border:none;
+	margin-bottom: 5px;
+}
+fieldset.separation {
+	border-top: 3px solid #F8F8F8;
+	padding: 3px 0 0 0;
+	margin: 5px 0 0 0;
+}
+
+.form {
+	margin-top: 10px;
+	padding: 0 0 10px 0;
+	background: #E4EFFC url(form_bottom_bis_es.gif) no-repeat bottom;
+	font-size: 11px;
+	color: #333;
+	line-height:11px;
+}
+.form .content {
+	padding: 5px 10px 0 5px;
+	background: transparent url(form_top_bis_es.gif) no-repeat top;
+}
+
+div.field {
+	display: block;
+	clear: both;
+	margin-top: 4px;
+	margin-bottom: 2px;
+	/*padding-bottom: 12px;*/
+}
+
+/* Labels */
+label { 
+	float: left;
+	display: block;
+	width: 87px;
+	line-height:10px;
+	margin-bottom: 5px;
+}
+
+label span.title {
+	font-weight: bold;
+	display: block;
+	padding-top: 2px; }
+
+/* Champs */
+div.field input[type=text], div.field textarea {
+	height: 12px;
+	font-size: 11px;
+	width: 150px;
+}
+div.field input#jj, div.field input#mm { width: 30px;	}
+div.field input#aa { width: 50px;	}
+
+div.field textarea {
+	height: 50px;
+	font-size: 11px;
+	width: 150px;
+}
+
+div.field select {
+	width: 265px;
+	height: 18px;
+	font-size:11px;
+	margin-bottom: 2px;
+}
+
+
+input.form-right, select.form-right { float:none; width: auto;}
+
+span.question-personelle {
+	color: #1E5596;
+	display: block;
+	width: 200px;
+	float: right;
+	margin-bottom:5px;
+}
+
+/* Boutons */
+.button { 
+	text-align: center;
+	clear: both;
+	margin-top: 3px;
+}
+
+/* Erreurs */
+#erreur {
+	font-weight: bold;
+	color: #C80000;
+	text-align: center;
+	line-height: 10px;
+	margin-bottom: 3px;
+}
+#erreur ul {
+	display: block;
+	text-align: left;
+	margin-left: 120px;
+}
+
+.erreur { color: #C80000; }
+.erreur input, .erreur textarea, .erreur select {
+	border-color: #C80000;
+	background: #FFEEEC;
+}
+
+.valid {	background: url(tick_es.gif) no-repeat 320px top; }
+
+/* Infos commerçant */
+ul.left {
+	list-style: none;
+	float: left;
+	text-align: right;
+	width: 170px;
+	display: block;
+}
+ul.right {
+	list-style: none;
+	float: right;
+	text-align: left;
+	width: 190px;
+	font-weight: bold;
+	display: block;
+}
+ul.infos {
+	font-size: 11px;
+	color: #666;
+}
+li.nobold {
+	font-weight: normal;
+	margin-top: -2px;
+}
+
+/* Aide carte */
+#aidecarte, #aidecivilite {
+	position: absolute;
+	top:75px;
+	padding: 10px 15px 0 15px;
+	width: 370px;
+	height: 258px;
+	background: #F8F8F8 url(bg_es.gif) repeat-y;
+	text-align: center;	
+	z-index: 999;
+}
+
+#aidecarte.err1, #aidecarte.err2, #aidecarte.err3, #aidecivilite.err1, #aidecivilite.err2, #aidecivilite.err3 { height: 278px; }
+#aidecarte.errs, #aidecivilite.errs { height: 298px; }
+
+/********** Pied de page *****************/
+#footer {
+	width: 100%;
+	height: 10px;
+	background: url(footer_es.gif) no-repeat;
+}

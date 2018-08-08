@@ -1,0 +1,56 @@
+/**
+ * CSS File for ezMark jQuery Plugin
+ *
+ **/
+.ez-hide {
+    opacity: 0;
+    filter: alpha(opacity = 0);
+	width:19px;
+	height:19px;
+}
+.ez-checkbox {
+	background: transparent url(https://www.119selfservice.tim.it/timimages/1402_login/img/checked.png) 0 1px no-repeat;
+	display: inline-block;
+	height: 25px;
+	width: 25px;
+	float: left;
+	margin-right:5px;
+	margin-top: 3px;
+}
+.ez-radio {
+	background: transparent url(https://www.119selfservice.tim.it/timimages/1402_login/img/radio.png) 0 1px no-repeat;
+	display: inline-block;
+	height: 25px;
+	width: 25px;
+	float: left;
+	margin-right:5px;
+	margin-top: 0px;
+}
+
+.ricaricard .ez-checkbox {
+	margin-top: -1px;
+}
+
+.ez-checked { background-position: 0 -25px; }
+.ez-radio.ez-selected,
+.ez-radio.ez-selected:hover{
+	 background: transparent url(https://www.119selfservice.tim.it/timimages/1402_login/img/radio.png) 0 -27px no-repeat;
+}
+.ez-selected,
+.ez-selected:hover{
+	background: transparent url(https://www.119selfservice.tim.it/timimages/1402_login/img/selected.png) center center no-repeat;
+}
+
+/* CheckBox utilizzate come Radio button */
+
+.checkbox_come_radio div.ez-radio {
+	background: url("https://www.119selfservice.tim.it/timimages/1402_login/img/checked.png") no-repeat 0 1px transparent;
+	display: inline-block;
+    float: left;
+    height: 18px;
+    margin-top: -1px;
+    width: 18px;
+}
+.checkbox_come_radio .ez-selected, .checkbox_come_radio .ez-selected:hover {
+	background: url("https://www.119selfservice.tim.it/timimages/1402_login/img/checked.png") no-repeat 0px -25px transparent !important;
+}

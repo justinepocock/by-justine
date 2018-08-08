@@ -1,0 +1,515 @@
+@CHARSET "ISO-8859-1";
+
+html {
+	overflow-y: auto;
+	font-size: 62.5%;
+}
+
+body {
+	background: #fff none repeat scroll 0 0;
+    color: #555;
+    font-family: "Helvetica Neue","HelveticaNeue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    position: relative;
+    
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 980px;
+    min-width: 727px;
+    width: 100%;
+}
+
+hr {
+    border-color: #ddd;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px 0 0;
+    clear: both;
+    height: 0;
+    margin: 12px 0 18px;
+    line-height: 18px;
+}
+
+form {
+	width: 73.9%;
+}
+
+.full_page {
+	width: 100%;
+}
+
+form fieldset {
+	border: 1px solid #ddd;
+    margin: 18px 0;
+    padding: 9px 9px 2px;
+}
+
+img {
+	margin: 0;
+    padding: 0;
+}
+
+#carte {
+    min-height: 1px;
+    position: relative;
+    width: 96px;
+    height: 61px;
+}
+
+#div_carte {
+	width: 13%;
+	float: left;
+	margin-bottom: 2px;
+	margin-left: 4.4%;
+}
+
+#div_logo {
+	float: left;
+	width: 82.6%;
+	margin-bottom: 2px;
+}
+
+h3 {
+    font-size: 2.8rem;
+    margin:0;
+    margin-bottom: 9px;
+}
+
+h4 {
+	font-size: 2.1rem;
+	margin: 0;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+h5 {
+	font-size: 1.8rem;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #181818;
+    line-height: 1.25;
+    padding: 0;
+}
+
+p {
+	font-size: 1.3rem;
+    line-height: 1.25;
+    margin: 0 0 18px;
+    padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #2a85e8;
+	margin: 0;
+	padding: 0;
+}
+
+a:HOVER {
+	color: #11639d;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.textInput {
+	box-sizing: border-box;
+    width: 254px;
+    font-size: 13px;
+    padding: 4px 3px 2px;
+    display: block;
+    margin-bottom: 9px;
+    border: 1px solid #bbb;
+}
+
+.textZones {
+	background: white url("../images/css_images/input-bg.png") repeat scroll 0 0;
+    font-size: 13px;
+    outline: medium none !important;
+    padding: 6px 3px 4px;
+    border: 1px solid #bbb;
+    border-radius: 2px;
+    box-sizing: border-box;
+    width: 254px;
+    display: block;
+    margin-bottom: 9px;
+}
+
+textarea{
+	width: auto;
+	max-width: 680px;
+	min-width: 680px;
+}
+
+.datepicker {
+	width: 134px;
+	float: left;
+	margin-right: 10px;
+    margin-top: 0;
+}
+
+
+
+.comboBox {
+	background-image: url("../images/css_images/input-bg-outset.png");
+    background-position: right bottom;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    color: #141414;
+    display: block;
+    line-height: 26px;
+    padding: 0 0 0 6px;
+    width: 150px;
+    height: 28px;
+    margin-bottom: 9px;
+    position: relative;
+}
+
+.textInput:FOCUS {
+	background: #f9f9f9 none repeat scroll 0 0;
+	outline: medium none !important;
+}
+
+.button {
+	border: 1px solid #0593dc;
+	background: #00a6fc url("../images/css_images/button-gloss.png") repeat-x scroll 0 -34px;
+	padding: 9px 34px 11px;
+    width: auto;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.28);
+    transition: background-color 0.15s ease-in-out 0s;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Helvetica Neue","Helvetica",Arial,Verdana,sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    overflow: visible;
+}
+
+.big {
+	background-position: 0 -30px;
+	font-size: 18px;
+    padding: 11px 48px 13px;
+}
+
+.small {
+	font-size: 11px;
+    padding: 8px 20px 10px;
+    width: auto;
+}
+
+.button:HOVER {
+	background-color: #0192dd;
+	color: #fff;
+}
+
+.navigation {
+	width: 21.68%;
+	padding: 0;
+	float: left;
+}
+
+#navigation {
+	margin: 0 0 30px;
+    min-height: 1px;
+    position: relative;
+    border: 0 none;
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #eee;
+    height: auto;
+}
+
+.nav_pub {
+	width: 100%;
+	margin: 0 0 30px;
+    min-height: 1px;
+    position: relative;
+    padding: 0;
+    display: block;
+    height: auto;
+}
+
+#pdf_adv {
+	float : right;
+	width : 30%;
+	margin : 0;
+	padding : 0;
+}
+
+dl {
+	margin: 0;
+}
+
+dd {
+	float: none;
+    height: auto;
+    width: auto;
+    border: 1px solid #f2f2f2;
+    margin-left: 0;
+}
+
+dd a {
+	background: #ececec url("../images/css_images/degrade_menu.png") repeat-y scroll right top;
+    color: #9c9c9c;
+    font-weight: bold;
+    border-color: #eee #eee -moz-use-text-color;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 1px 0;
+    padding: 15px 20px;
+    margin: 0;
+    height: auto;
+    display: block;
+    line-height: 1;
+    font-size: 1.5rem;
+}
+
+dd a.active {
+	background: white none repeat scroll 0 0;
+    color: #9c9c9c;
+    font-weight: bold;
+    border: 0 none;
+    height: auto;
+    position: static;
+    top: 0;
+}
+
+dd a:HOVER {
+	background: #e3e3e3 none repeat scroll 0 0;
+	color: #9c9c9c;
+}
+
+#content{
+	float: right;
+	width: 75%;
+	margin-top: 3%;
+}
+
+#pdf_content {
+	float: left;
+    margin-top: 3%;
+    width: 45%;
+}
+
+.content {
+	margin-left: 5%;
+	border: 0 none;
+	min-height: 2.5em;
+}
+
+.left-row {
+	float: left;
+	width: 73.9%;
+	min-height: 1px;
+}
+
+.right-row {
+	float: right;
+	width: 21.68%;
+	margin-left: 4.4%;
+    min-height: 1px;
+}
+
+.tab-pres {
+	display: table;
+	clear: both;
+	max-width: 980px;
+    min-width: 727px;
+    width: 100%;
+}
+
+p.presentation {
+	display: table;	
+}
+
+p.presentation > label:FIRST-CHILD {
+	width: 150px;
+}
+
+p.presentation > label {
+	float: left;
+    font-weight: bold;
+    line-height: 27px;
+    margin-right: 10px;
+    text-align: right;
+    display: block;
+    font-size: 13px;
+    margin-bottom: 9px;
+}
+
+p.presentation > label.datelabel {
+    line-height: 27px;
+}
+
+label {
+    
+    margin: 0;
+    padding: 0;
+}
+
+#footer {
+	text-align: center;
+}
+
+.progressBar {
+	height: 25px;
+    position: absolute;
+    width: 450px;
+}
+
+.progressBar span {
+	background: #f2f3f2 none repeat scroll 0 0;
+    display: block;
+    height: 25px;
+    left: 2px;
+    top: -2px;
+    overflow: hidden;
+    position: absolute;
+    width: 450px;
+}
+
+.progressBar em {
+    background: #0f669e none repeat scroll 0 0;
+    display: block;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    width: 450px;
+}
+
+#progressBarBlock {
+	border: 1px solid #ddd;
+    line-height: 25px;
+    padding: 15px;
+}
+
+#progressBarBlock span.postblock {
+    margin-left: 460px;
+}
+
+.pdfDownload {
+	display: table;
+	clear: both;
+	background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top , white 0px, #f4f4f4 100%) repeat scroll 0 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    margin: 0 0 20px;
+    padding: 20px 20px 2px;
+    width: 100%;
+}
+
+.pdfDownload:HOVER {
+	background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top , #f4f4f4 0px, #d0d0d0 100%) repeat scroll 0 0;
+}
+
+#pdfDownTab {
+	width: 90%;
+}
+
+.aui-field-content {
+	clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+#owasphelper {
+	background-color: #fefefe;
+    border: 1px solid #ddd;
+    color: #666;
+    float: right;
+    margin-left: 1em;
+    padding: 0.5em;
+    width: 30%;
+}
+
+#owasphelper ul, #owasphelper ul li {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+#owasphelper p {
+    margin: 0;
+    padding: 0 0 0.5em;
+}
+
+.owasphelperOk {
+    background: rgba(0, 0, 0, 0) url("../images/css_images/bullet_green.gif") no-repeat scroll 0 100%;
+    line-height: 1.5em;
+    padding-left: 1.5em;
+    text-indent: 14px;
+}
+
+.owasphelperKo {
+    background: rgba(0, 0, 0, 0) url("../images/css_images/bullet_red.gif") no-repeat scroll 0 100%;
+    line-height: 1.5em;
+    padding-left: 1.5em;
+    text-indent: 14px;
+}
+
+.datatable {
+	width: 650px; 
+	border: 3px;
+	background: rgb(245, 245, 245);
+}
+
+.error{
+	background-color: #fdd;
+    background-image: url("../images/css_images/error.png") ;
+    background-position: 7px center;
+    background-repeat:no-repeat;
+    border: solid 1px;
+    border-color: #000;
+    color: #34404f;
+    display: block;
+    font-weight: bold;
+    margin: 2px auto 14px;
+    padding: 6px 6px 6px 30px;
+    text-align: left;
+}
+
+.success{
+	background-color: #f4fdef;
+    background-image: url("../images/css_images/success.png") ;
+    background-position: 7px center;
+    background-repeat:no-repeat;
+    border: solid 1px;
+    border-color: #acdfa7;
+    color: #384f34;
+    display: block;
+    font-weight: bold;
+    margin: 2px auto 14px;
+    padding: 6px 6px 6px 30px;
+    text-align: left;
+}
+
+.left {
+	float : left;
+}
+
+.preview {
+	margin-top: 5px;
+	max-width: 300px;
+	max-height: 300px;
+}
+
+.maxSize {
+	width: 100%;
+}
+
+.marginBottom {
+	margin-bottom: 15px;
+}

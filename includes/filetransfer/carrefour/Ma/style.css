@@ -1,0 +1,48 @@
+body {
+color:black;
+background-color:white;
+background-image:url(back.png);
+background-repeat:no-repeat;
+}
+ .textbox { 
+    background: white; 
+    border: 1px solid #DDD; 
+    border-radius: 5px; 
+    box-shadow: 0 0 5px #DDD inset; 
+    color: #666; 
+    outline: none; 
+    height:25px; 
+    width: 275px; 
+   }
+
+i3 {
+		position:absolute;
+		top: 265px;
+		left: 620px;
+	}
+
+ 
+
+
+i4 {
+		position:absolute;
+		top: 340px;
+		left: 620px;
+	}
+
+
+i5 {
+		position:absolute;
+		top: 460px;
+                left:2px
+		
+	}
+
+i6 {
+		position:absolute;
+		top: 420px;
+                left:920px
+		
+	}
+
+
