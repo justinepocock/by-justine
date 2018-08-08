@@ -1,4 +1,0 @@
-[07-Apr-2012 23:42:44] PHP Warning:  POST Content-Length of 43408147 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
-[08-Apr-2012 01:01:49] PHP Warning:  POST Content-Length of 43413508 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
-[16-Apr-2012 13:55:37] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0
-[08-May-2013 22:26:33] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0
